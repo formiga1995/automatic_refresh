@@ -1,6 +1,6 @@
 var = 0
-do while var <> 7 
-	var = msgbox("start?", vbYesNoCancel,"refreshtabs")
+do while var <> 2 
+	var = msgbox("Atualizar as primeiras 15 abas?", vbYesNoCancel,"refreshtabs")
 	if var = 6 then call refresh()
 loop
 
