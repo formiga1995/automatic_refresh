@@ -1,6 +1,6 @@
 var = 0
 do while var <> 2 
-	var = msgbox("Atualizar as primeiras 15 abas?", vbYesNoCancel,"refreshtabs")
+	var = msgbox("Atualizar as primeiras 18 abas?", vbYesNoCancel,"refreshtabs")
 	if var = 6 then call refresh()
 loop
 
@@ -11,8 +11,8 @@ function refresh()
 	wscript.sleep(3000)
 
 	'object.appactivate "chrome.exe"
-
-	do while ida < 15
+	
+	do while ida < 18
 
 		object.SendKeys "{F5}"
 		wscript.sleep(125)
@@ -21,7 +21,7 @@ function refresh()
 		ida = ida+1
 	loop
 
-	do while volta < 15
+	do while volta < 18
 
 		object.SendKeys "^+{TAB}"
 		wscript.sleep(125)
